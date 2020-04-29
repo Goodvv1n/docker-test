@@ -43,16 +43,15 @@
 	</dependencies>
 
 	<build>
-		<finalName>demo-backend</finalName>
 		<plugins>
 			<plugin>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.6</version>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<warName>demo-backend</warName>
+					<finalName>demo-backend</finalName>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
