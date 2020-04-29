@@ -22,7 +22,5 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-        - ls
         - cd out/
-        - ls
         - sshpass -e scp -o UserKnownHostsFile=/dev/null -o stricthostkeychecking=no demo-backend.war root@82.148.31.224:/usr/local/tomcat/
